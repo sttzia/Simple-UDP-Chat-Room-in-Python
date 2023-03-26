@@ -4,7 +4,7 @@ import socket
 s = socket.socket()
 
 # Ορισμός "πόρτας" επικοινωνίας (port)
-port = 8080
+port = xxxx
 connStatus = "Σύνδεση σε εξέλιξη..."
 i = 1
 
@@ -12,7 +12,7 @@ i = 1
 while i < 4 and connStatus == "Σύνδεση σε εξέλιξη...":
     try:
         print(connStatus, i)
-        s.connect(('46.246.134.78', port))
+        s.connect(('xxx.xxx.xxx.xxx', port))
         connStatus = connResponse = s.recv(1024).decode()
         print(connResponse)
 
